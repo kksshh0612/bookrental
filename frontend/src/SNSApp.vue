@@ -44,16 +44,6 @@
                     </v-list-item>
                     <v-list-item
                         class="px-2"
-                        key="bookStocks"
-                        to="/books/bookStocks"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        도서 재고 조회
-                    </v-list-item>
-                    <v-list-item
-                        class="px-2"
                         key="users"
                         to="/users/users"
                         @click="changeUrl()"
@@ -81,6 +71,16 @@
                         style="font-weight:700;"
                     >
                         알림
+                    </v-list-item>
+                    <v-list-item
+                        class="px-2"
+                        key="bookDashboards"
+                        to="/bookdashboards/bookDashboards"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        BookDashboard
                     </v-list-item>
                 </v-list>
             </v-navigation-drawer>
@@ -166,10 +166,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: '도서 재고 조회', 
-                description: 'BookStock을 관리하는 화면입니다.', 
-                key: 'bookStocks', 
-                route: '/books/bookStocks',
+                title: 'BookDashboard', 
+                description: 'BookDashboard을 관리하는 화면입니다.', 
+                key: 'bookDashboards', 
+                route: '/bookdashboards/bookDashboards',
                 ImageUrl: '',
             },
             

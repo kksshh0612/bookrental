@@ -8,8 +8,6 @@ Vue.use(Router);
 import BookBookManager from "./components/listers/BookBookCards"
 import BookBookDetail from "./components/listers/BookBookDetail"
 
-import BookStockView from "./components/BookStockView"
-import BookStockViewDetail from "./components/BookStockViewDetail"
 import UserUserManager from "./components/listers/UserUserCards"
 import UserUserDetail from "./components/listers/UserUserDetail"
 
@@ -19,6 +17,9 @@ import ReservationReservationDetail from "./components/listers/ReservationReserv
 import NotificationNotificationManager from "./components/listers/NotificationNotificationCards"
 import NotificationNotificationDetail from "./components/listers/NotificationNotificationDetail"
 
+
+import BookDashboardView from "./components/BookDashboardView"
+import BookDashboardViewDetail from "./components/BookDashboardViewDetail"
 
 export default new Router({
     // mode: 'history',
@@ -35,16 +36,6 @@ export default new Router({
                 component: BookBookDetail
             },
 
-            {
-                path: '/books/bookStocks',
-                name: 'BookStockView',
-                component: BookStockView
-            },
-            {
-                path: '/books/bookStocks/:id',
-                name: 'BookStockViewDetail',
-                component: BookStockViewDetail
-            },
             {
                 path: '/users/users',
                 name: 'UserUserManager',
@@ -78,6 +69,17 @@ export default new Router({
                 component: NotificationNotificationDetail
             },
 
+
+            {
+                path: '/bookdashboards/bookDashboards',
+                name: 'BookDashboardView',
+                component: BookDashboardView
+            },
+            {
+                path: '/bookdashboards/bookDashboards/:id',
+                name: 'BookDashboardViewDetail',
+                component: BookDashboardViewDetail
+            },
 
 
     ]

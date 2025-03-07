@@ -15,13 +15,13 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                Stock :  {{item.stock }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
                                 Name :  {{item.name }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Author :  {{item.author }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                RentalStatus :  {{item.rentalStatus }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

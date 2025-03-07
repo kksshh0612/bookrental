@@ -31,7 +31,7 @@ public class Reservation {
 
     private Date returnedTime;
 
-    private String name;
+    private String bookName;
 
     @PostPersist
     public void onPostPersist() {

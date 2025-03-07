@@ -21,7 +21,7 @@
                 <Date label="ReturnedTime" v-model="item.returnedTime" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="Name" v-model="item.name" :editMode="editMode" @change="change" />
+                <String label="BookName" v-model="item.bookName" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

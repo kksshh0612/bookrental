@@ -56,7 +56,7 @@
                             [ ReservedTime :  {{data.reservedTime }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Status :  {{data.status }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ReturnedTime :  {{data.returnedTime }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Name :  {{data.name }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ BookName :  {{data.bookName }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -121,7 +121,7 @@
                 'reservedTime': '2025-03-07',
                 'status': '',
                 'returnedTime': '2025-03-07',
-                'name': '',
+                'bookName': '',
             }
         },
         methods: {

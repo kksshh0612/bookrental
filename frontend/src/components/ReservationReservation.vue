@@ -21,7 +21,7 @@
             <Date label="ReservedTime" v-model="value.reservedTime" :editMode="editMode" :inputUI="''"/>
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
             <Date label="ReturnedTime" v-model="value.returnedTime" :editMode="editMode" :inputUI="''"/>
-            <String label="Name" v-model="value.name" :editMode="editMode" :inputUI="''"/>
+            <String label="BookName" v-model="value.bookName" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

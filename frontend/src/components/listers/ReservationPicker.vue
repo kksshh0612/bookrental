@@ -30,7 +30,7 @@
                                 ReturnedTime :  {{item.returnedTime }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Name :  {{item.name }}
+                                BookName :  {{item.bookName }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

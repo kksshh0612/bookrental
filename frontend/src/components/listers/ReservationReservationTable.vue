@@ -66,7 +66,7 @@
                     { text: "reservedTime", value: "reservedTime" },
                     { text: "status", value: "status" },
                     { text: "returnedTime", value: "returnedTime" },
-                    { text: "name", value: "name" },
+                    { text: "bookName", value: "bookName" },
                 ],
             reservation : [],
             newValue: {},
@@ -89,7 +89,7 @@
                 'reservedTime': '2025-03-07',
                 'status': '',
                 'returnedTime': '2025-03-07',
-                'name': '',
+                'bookName': '',
             }
         },
         methods: {

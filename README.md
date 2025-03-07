@@ -24,6 +24,7 @@ See the README.md files inside the each microservices directory:
 - user
 - reservation
 - notification
+- bookdashboard
 
 
 ## Run API Gateway (Spring Gateway)
@@ -35,7 +36,7 @@ mvn spring-boot:run
 ## Test by API
 - book
 ```
- http :8088/books id="id"stock="stock"name="name"author="author"
+ http :8088/books id="id"name="name"author="author"rentalStatus="rentalStatus"
 ```
 - user
 ```
@@ -43,11 +44,14 @@ mvn spring-boot:run
 ```
 - reservation
 ```
- http :8088/reservations id="id"userId="userId"bookId="bookId"reservedTime="reservedTime"status="status"returnedTime="returnedTime"name="name"
+ http :8088/reservations id="id"userId="userId"bookId="bookId"reservedTime="reservedTime"status="status"returnedTime="returnedTime"bookName="bookName"
 ```
 - notification
 ```
  http :8088/notifications id="id"type="type"isRead="isRead"
+```
+- bookdashboard
+```
 ```
 
 

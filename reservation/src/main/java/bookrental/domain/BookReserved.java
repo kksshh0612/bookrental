@@ -17,7 +17,7 @@ public class BookReserved extends AbstractEvent {
     private Date reservedTime;
     private String status;
     private Date returnedTime;
-    private String name;
+    private String bookName;
 
     public BookReserved(Reservation aggregate) {
         super(aggregate);

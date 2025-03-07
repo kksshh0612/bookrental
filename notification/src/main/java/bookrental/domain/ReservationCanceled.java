@@ -16,5 +16,5 @@ public class ReservationCanceled extends AbstractEvent {
     private Date reservedTime;
     private String status;
     private Date returnedTime;
-    private String name;
+    private String bookName;
 }

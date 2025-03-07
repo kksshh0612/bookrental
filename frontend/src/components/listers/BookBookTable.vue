@@ -61,9 +61,9 @@
             headers: 
                 [
                     { text: "id", value: "id" },
-                    { text: "stock", value: "stock" },
                     { text: "name", value: "name" },
                     { text: "author", value: "author" },
+                    { text: "rentalStatus", value: "rentalStatus" },
                 ],
             book : [],
             newValue: {},
@@ -81,9 +81,9 @@
             this.values = temp.data._embedded.books;
 
             this.newValue = {
-                'stock': '',
                 'name': '',
                 'author': '',
+                'rentalStatus': false,
             }
         },
         methods: {

@@ -20,11 +20,11 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String stock;
-
     private String name;
 
     private String author;
+
+    private Boolean rentalStatus;
 
     @PostPersist
     public void onPostPersist() {

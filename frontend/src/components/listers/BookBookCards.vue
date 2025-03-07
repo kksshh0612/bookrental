@@ -101,9 +101,9 @@
             me.values = temp.data._embedded.books;
             
             me.newValue = {
-                'stock': '',
                 'name': '',
                 'author': '',
+                'rentalStatus': false,
             }
         },
         methods:{

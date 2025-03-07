@@ -106,7 +106,7 @@
                 'reservedTime': '2025-03-07',
                 'status': '',
                 'returnedTime': '2025-03-07',
-                'name': '',
+                'bookName': '',
             }
         },
         methods:{

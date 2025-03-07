@@ -16,9 +16,9 @@
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
-            <String label="Stock" v-model="value.stock" :editMode="editMode" :inputUI="''"/>
             <String label="Name" v-model="value.name" :editMode="editMode" :inputUI="''"/>
             <String label="Author" v-model="value.author" :editMode="editMode" :inputUI="''"/>
+            <Boolean label="RentalStatus" v-model="value.rentalStatus" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

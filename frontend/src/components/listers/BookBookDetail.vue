@@ -6,13 +6,13 @@
 
         <v-card-text>
             <div>
-                <String label="Stock" v-model="item.stock" :editMode="editMode" @change="change" />
-            </div>
-            <div>
                 <String label="Name" v-model="item.name" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="Author" v-model="item.author" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Boolean label="RentalStatus" v-model="item.rentalStatus" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 
