@@ -17,5 +17,5 @@ public class BookDashboard {
     private Long id;
 
     private String bookName;
-    private String rentalStatus;
+    private Boolean rentalStatus;
 }

@@ -10,4 +10,7 @@ public class BookRegistered extends AbstractEvent {
 
     private Long id;
     private String stock;
+    private String name;
+    private String author;
+    private Boolean rentalStatus;
 }

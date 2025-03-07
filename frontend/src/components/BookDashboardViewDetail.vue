@@ -10,7 +10,7 @@
                 <String label="BookName" v-model="item.bookName" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="RentalStatus" v-model="item.rentalStatus" :editMode="editMode" @change="change" />
+                <Boolean label="RentalStatus" v-model="item.rentalStatus" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
     </v-card>

@@ -27,6 +27,11 @@ public class BookDashboardViewHandler {
             // view 객체 생성
             BookDashboard bookDashboard = new BookDashboard();
             // view 객체에 이벤트의 Value 를 set 함
+            bookDashboard.setId(bookRegistered.getId());
+            bookDashboard.setBookName(bookRegistered.getName());
+            bookDashboard.setRentalStatus(
+                String.valueOf(bookRegistered.getRentalStatus())
+            );
             // view 레파지 토리에 save
             bookDashboardRepository.save(bookDashboard);
         } catch (Exception e) {
@@ -65,7 +70,18 @@ public class BookDashboardViewHandler {
         try {
             if (!reservationCanceled.validate()) return;
             // view 객체 조회
+            Optional<BookDashboard> bookDashboardOptional = bookDashboardRepository.findById(
+                reservationCanceled.getBookId()
+            );
 
+            if (bookDashboardOptional.isPresent()) {
+                BookDashboard bookDashboard = bookDashboardOptional.get();
+                // view 객체에 이벤트의 eventDirectValue 를 set 함
+                bookDashboard.setId(reservationCanceled.getBookId());
+                bookDashboard.setBookName(reservationCanceled.getBookName());
+                // view 레파지 토리에 save
+                bookDashboardRepository.save(bookDashboard);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
