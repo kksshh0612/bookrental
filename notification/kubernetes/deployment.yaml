@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: notification
-          image: "username/notification:latest"
+          image: "user05.azurecr.io/notification:v1"
           ports:
             - containerPort: 8080
           readinessProbe:
