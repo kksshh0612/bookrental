@@ -86,9 +86,9 @@
             this.newValue = {
                 'userId': 0,
                 'bookId': 0,
-                'reservedTime': '2025-03-07',
+                'reservedTime': '2025-03-10',
                 'status': '',
-                'returnedTime': '2025-03-07',
+                'returnedTime': '2025-03-10',
                 'bookName': '',
             }
         },
